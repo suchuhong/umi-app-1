@@ -41,6 +41,7 @@ const EngineeringParametersPage = () => {
   const [selectedOption3, setSelectedOption3] = useState(null);
   const [options4, setOptions4] = useState([]);
 
+  const [loading4, setLoading4] = useState(false);
   const [dropdownVisible4, setDropdownVisible4] = useState(false);
   const [selectedFields, setSelectedFields] = useState([]);
   const [tableData, setTableData] = useState([]);
@@ -139,6 +140,7 @@ const EngineeringParametersPage = () => {
         />
 
         <Select
+          loading={loading4}
           mode="multiple"
           showArrow
           showSearch
